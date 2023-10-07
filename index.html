@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Product</title>
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="./css/main.css">
+
+   <!-- custom js file link  -->
+
+</head>
+<body>
+<div class="container">
+
+   <h3 class="title"> organic products </h3>
+   <i class="fa-solid fa-bag-shopping"></i>
+
+   <div class="products-container">
+
+      <div class="product" data-name="p-1">
+         <img src="images/1.png" alt="" class="product-img">
+         <h3 class="product-title">strawberries</h3>
+         <div class="price">$2.00</div>
+      </div>
+
+      <div class="product" data-name="p-2">
+         <img src="images/2.png" alt="" class="product-img">
+         <h3 class="product-title">onions</h3>
+         <div class="price">$2.00</div>
+      </div>
+
+      <div class="product" data-name="p-3">
+         <img src="images/3.png" alt="" class="product-img">
+         <h3 class="product-title">tomatoes</h3>
+         <div class="price">$2.00</div>
+      </div>
+
+      <div class="product" data-name="p-4">
+         <img src="images/4.png" alt="" class="product-img">
+         <h3 class="product-title">brinjal</h3>
+         <div class="price">$2.00</div>
+      </div>
+
+      <div class="product" data-name="p-5">
+         <img src="images/5.png" alt="" class="product-img">
+         <h3 class="product-title">broccoli</h3>
+         <div class="price">$2.00</div>
+      </div>
+
+      <div class="product" data-name="p-6">
+         <img src="images/6.png" alt="" class="product-img">
+         <h3 class="product-title">potatoes</h3>
+         <div class="price">$2.00</div>
+      </div>
+
+   </div>
+
+   <div class="cartBox">
+      <h1>Your Cart</h1>
+      <i class="fa-solid fa-xmark closeOpenLeft"></i>
+
+      <div class="cart-content">
+      </div>
+
+
+      <!-- Total  -->
+      <div class="total">
+         <div class="total-title">Total</div>
+         <div class="total-price">$0</div>
+       </div>
+       <!-- Buy Button -->
+       <button type="button" class="btn-buy">Buy Now</button>
+       <!-- Cart Close -->
+       <i class="bx bx-x" id="close-cart"></i>
+     </div>
+
+   </div>
+
+</div>
+
+<div class="products-preview">
+
+   <div class="preview" data-target="p-3">
+      <i class="fas fa-times"></i>
+      <img src="images/1.png" alt="" class="image">
+      <h3 class="preview_title">strawberries</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">$2.00</div>
+      <div class="buttons">
+         <button class="buy">buy now</button>
+         <button class="cart">add to cart</button>
+      </div>
+   </div>
+
+
+   <div class="preview" data-target="p-3">
+      <i class="fas fa-times"></i>
+      <img src="images/2.png" alt="" class="image">
+      <h3 class="preview_title">onions</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">$2.00</div>
+      <div class="buttons">
+         <button class="buy">buy now</button>
+         <button class="cart">add to cart</button>
+      </div>
+   </div>
+
+
+   <div class="preview" data-target="p-3">
+      <i class="fas fa-times"></i>
+      <img src="images/3.png" alt="" class="image">
+      <h3 class="preview_title">tomatoes</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">$2.00</div>
+      <div class="buttons">
+         <button class="buy">buy now</button>
+         <button class="cart">add to cart</button>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-3">
+      <i class="fas fa-times"></i>
+      <img src="images/4.png" alt="" class="image">
+      <h3 class="preview_title">brinjal</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">$2.00</div>
+      <div class="buttons">
+         <button class="buy">buy now</button>
+         <button class="cart">add to cart</button>
+      </div>
+   </div>
+
+
+   <div class="preview" data-target="p-3">
+      <i class="fas fa-times"></i>
+      <img src="images/5.png" alt="" class="image">
+      <h3 class="preview_title">broccoli</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">$2.00</div>
+      <div class="buttons">
+         <button class="buy">buy now</button>
+         <button class="cart">add to cart</button>
+      </div>
+   </div>
+
+
+   <div class="preview" data-target="p-3">
+      <i class="fas fa-times"></i>
+      <img src="images/6.png" alt="" class="image">
+      <h3 class="preview_title">potatoes</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">$2.00</div>
+      <div class="buttons">
+         <button class="buy">buy now</button>
+         <button class="cart">add to cart</button>
+      </div>
+   </div>
+
+
+</div>
+
+
+</body>
+    <script src="./js/app.js" defer></script>
+</html>
